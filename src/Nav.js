@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import { FaFileInvoiceDollar } from "react-icons/fa";
+import { FiHome, FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
+import { BiCog, BiFoodMenu } from "react-icons/bi";
+import { GrDeliver, GrMail } from "react-icons/gr";
+import { BsFillPeopleFill, BsFillPersonFill } from "react-icons/bs";
+import { MdNotifications } from "react-icons/md";
 
 function Nav() {
 
@@ -8,16 +14,19 @@ function Nav() {
 
   {/* <!-- mobile menu bar --> */}
 
-  <div class="bg-yellow-100 text-gray-700 flex justify-between md:hidden">
+  {/* <div class="bg-yellow-100 text-gray-700 flex justify-between md:hidden"> */}
 
+{/* Small side bar  */}
+  <div class="sidebar bg-yellow-100 text-black-100 w-16 space-y-6 py-7 px-2 absolute inset-y-0 left-0  md:hidden">
+    
     {/* <!-- logo --> */}
 
     <a href="#" class="block p-3 w-12 text-green-900 font-bold"><img src="https://images.squarespace-cdn.com/content/v1/5fed1091cc6a33436b48697d/327d15bd-5843-4840-9b13-cf608516f8ca/Parkday+App.png?format=1500w" /> </a>
-    <a href="#" class="block p-3 font-bold">Home</a>
-    <a href="#" class="block p-3 font-bold">Menu</a>
-    <a href="#" class="block p-3 font-bold">Invoices</a>
-    <a href="#" class="block p-3 font-bold">Orders</a>
-    <a href="#" class="block p-3 font-bold">Employees</a>
+    <a href="#" class="block p-3 font-bold"><FiHome /></a>
+    <a href="#" class="block p-3 font-bold"><BiFoodMenu /></a>
+    <a href="#" class="block p-3 font-bold"><FaFileInvoiceDollar /></a>
+    <a href="#" class="block p-3 font-bold"><GrDeliver /></a>
+    <a href="#" class="block p-3 font-bold"><BsFillPeopleFill /></a>
 
 
     {/* <!-- mobile menu button --> */}
@@ -44,26 +53,26 @@ function Nav() {
 
     {/* <!-- nav --> */}
     <nav>
-      <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-black-700 hover:text-white">
-        Home
+      <a href="#" class="flex gap-x-2 py-2.5 px-4 rounded transition duration-200 hover:bg-black-700 hover:text-white">
+      <FiHome />  Home
       </a>
-      <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-black-700 hover:text-white">
-        Menu
+      <a href="" class="flex gap-x-2 py-2.5 px-4 rounded transition duration-200 hover:bg-black-700 hover:text-white">
+      <BiFoodMenu /> Menu
       </a>
-      <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-black-700 hover:text-white">
-        Orders
+      <a href="" class="flex gap-x-2 py-2.5 px-4 rounded transition duration-200 hover:bg-black-700 hover:text-white">
+      <GrDeliver /> Orders
       </a>
-      <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-black-700 hover:text-white">
-        Invoices
+      <a href="" class="flex gap-x-2 py-2.5 px-4 rounded transition duration-200 hover:bg-black-700 hover:text-white">
+      <FaFileInvoiceDollar /> Invoices
       </a>
-      <a href="" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-black-700 hover:text-white">
-        Employees
+      <a href="" class="flex gap-x-2 py-2.5 px-4 rounded transition duration-200 hover:bg-black-700 hover:text-white">
+      <BsFillPeopleFill /> Employees
       </a>
     </nav>
   </div>
 
   {/* <!-- content --> */}
-  <div class="flex-1 p-10 text-2xl font-bold">
+  <div class="flex-1 p-10 text-2xl ml-10 font-bold md:-ml-5">
     Welcome Back
   </div>
 
